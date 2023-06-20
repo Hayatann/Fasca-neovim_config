@@ -6,6 +6,7 @@ if vim.fn.has "nvim-0.9" == 1 then
 end
 local options = astronvim.user_opts("options", {
   opt = {
+    autoread = true,
     breakindent = true, -- Wrap indent to match  line start
     clipboard = "unnamedplus", -- Connection to the system clipboard
     cmdheight = 0, -- hide command line unless needed
@@ -20,6 +21,7 @@ local options = astronvim.user_opts("options", {
     foldlevelstart = 99, -- start with all code unfolded
     foldcolumn = vim.fn.has "nvim-0.9" == 1 and "1" or nil, -- show foldcolumn in nvim 0.9
     history = 100, -- Number of commands to remember in a history table
+    helplang = "ja,en",
     ignorecase = true, -- Case insensitive searching
     infercase = true, -- Infer cases in keyword completion
     laststatus = 3, -- globalstatus
